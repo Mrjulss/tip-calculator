@@ -1,0 +1,165 @@
+html{
+    height: 100%;
+}
+body{
+    background: rgb(250, 132, 77);
+    background: linear-gradient(180deg, rgb(240, 234, 231) 0%, rgba(221, 125, 34, 0.418) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    color: rgba(40, 0, 0, 0.774);
+}
+#main{
+    margin: auto;
+    width: 55%;
+    background: rgba(255, 255, 255, 0);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.175) 0%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 5px 20px;
+    border-radius: 1rem;
+}
+.setting{
+    float: left;
+    padding: 20px;
+    width: 45%;
+    height: 30vh;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin: 2.5%;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+button{
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    text-align:center;
+    width:35%;
+    margin-top: 8%;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    border: 0px solid #000;
+    border-radius: 1rem;
+    padding: 8px;
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+#result{
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
+input{
+    width: 30%;
+    border: 0px;
+}
+
+input[type="radio"]{
+  accent-color: rgba(40, 0, 0, 0.774);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+}
+  
+.switch input {display:none;}
+  
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+  
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+  
+input:checked + .slider {
+  background-color:rgba(40, 0, 0, 0.77);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(47px);
+  -ms-transform: translateX(47px);
+  transform: translateX(47px);
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+  display: none;
+  color: white;
+}
+.off{
+    color: #000;
+}
+
+.on, .off
+{
+  font-weight: 500;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
